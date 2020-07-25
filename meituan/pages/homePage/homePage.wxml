@@ -1,2 +1,46 @@
-<!--pages/homePage/homePage.wxml-->
-<text>pages/homePage/homePage.wxml</text>
+<view class="top">
+        <text >南昌</text>
+        <view class="xiala"><image src="/icon/xiala.png" /></view>
+        <view class="input"> <input class="weui-input" auto-focus placeholder="输入商家名、品类或商圈"/> </view>     
+</view>
+<view class="main">
+    <view class="explor">
+        <view class="explor-img"><image src="/icon/explor.png" /></view>
+        <view class="explor-text"><text >展开</text></view>
+    </view>
+
+    <view class="middle">
+        <view class="middle-sorts">
+            <view class="middle-sorts__active" wx:for="{{actives}}" wx:key="index">
+                <view class="active-img" style="background-color:{{item.color}}">
+                    <view class="active-img__pic"><image src="{{item.image}}"/></view>
+                </view>  
+                <view class="active-text"><text >{{item.activeName}}</text></view>    
+            </view>
+        </view>
+        <view class="middle-more" wx:for="{{moreActivies}}">
+            <view class="middle-more__sorts">
+                <image src="{{item.image}}" />
+            </view>
+            <view class="middle-more__text">{{item.title}}</view>
+        </view>
+        <view class="middle-banner">
+            <swiper class="middle-banner-swipper" indicator-active-color="#555555" indicator-dots="true" autoplay="true" interval="3000">
+                <swiper-item class="banner-img" wx:for="{{banners}}" wx:key="index">
+                    <image src="{{item.img}}" />
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+   
+    <view class="bottom">
+        <view class="bottom-title"><text >附近拼团</text></view>
+        <view class="bottom-content">
+        <view class="bottom-shop" wx:for="{{bottomShop}}" wx:key="index">
+            <view class="bottom-shop__pic"><image src="{{item.image}}"/></view>
+            <view class="bottom-shop__text">{{item.title}}</view> 
+            <view class="bottom-shop__price">￥{{item.price}}</view>     
+        </view>
+        </view>
+    </view>
+</view>

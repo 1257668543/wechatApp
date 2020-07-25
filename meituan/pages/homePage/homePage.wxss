@@ -1,1 +1,182 @@
-/* pages/homePage/homePage.wxss */
+.main{
+    padding: 19.9rpx;
+    height: 100vh;
+    background-color: #f8f9f6;
+}
+
+.explor{
+    width: 92rpx;
+    height: 92rpx;
+    text-align: center;
+    font-size: 18rpx;
+    position: absolute;
+    right: 80rpx;
+    top:405rpx;
+}
+
+.explor-img{
+    display: inline-block;
+    height: 28rpx;
+    width: 28rpx;
+}
+
+.explor image{
+    width: 100%;
+    height: 100%;
+}
+
+.explor-text{
+    margin-top: 28rpx;
+}
+
+.top{
+    display: flex;
+    background-color: #f6c944;
+    padding: 10rpx;
+}
+
+.top text{
+    line-height: 43rpx;
+}
+
+.xiala{
+    width: 16.6rpx;
+    height: 16.6rpx;
+    margin-left: 13rpx;
+}
+
+.xiala image{
+    width: 100%;
+    height: 100%;
+}
+
+.input{
+    background-color: #fff;
+    border: 1rpx, solid,#000000;
+    border-radius: 15px;
+    text-align: center;
+    width: 385.8rpx;
+    height: 55.2rpx;
+    margin-left: 20rpx;
+}
+
+.weui-input{
+    line-height: 100px;
+    height: 100%;
+}
+
+.middle{
+    background-color: #fff;
+    padding: 19.9rpx;
+    width: 100%;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.active-img__pic{
+    display: inline-block;
+    width: 64rpx;
+    height: 64rpx;
+}
+
+.middle-sorts__active{
+    display: inline-block;
+    margin-left: 36rpx;
+    text-align: center;
+    font-size: 19.3rpx;  
+}
+
+.middle-sorts{
+    width: 648rpx;
+}
+
+.active-img{
+    width: 93.3rpx;
+    height: 93.3rpx;
+    border-radius: 10px;
+    line-height: 130rpx;
+}
+
+.active-img image{
+    width: 100%;
+    height: 100%;
+}
+
+.active-text{
+    line-height: 25rpx;
+}
+
+.middle-banner{
+    margin-top: 29rpx;
+    margin-left: 6rpx;
+    margin-right: 6rpx;
+    height: 167rpx;
+}
+
+.middle-banner-swipper{
+    height: 100%;
+    width: 100%;
+}
+
+.banner-img image{
+    width: 100%;
+    height: 167rpx;
+}
+
+.middle-more{
+    display: inline-block;
+    width: 92rpx;
+    height: 92rpx;
+    text-align: center;
+    margin-left: 35.8rpx;
+    font-size: 18rpx;
+    margin-top: 38rpx;
+}
+
+.middle-more__sorts{
+    display: inline-block;
+    height: 48rpx;
+    width: 40rpx;
+}
+
+.middle-more__sorts image{
+    width: 100%;
+    height: 100%;
+}
+
+.middle-more__text{
+    text-align: center;
+    white-space: pre;
+    margin-top: 15rpx;
+}
+
+.bottom{
+    padding: 16.6rpx;
+}
+
+.bottom-title{
+    font-weight: 550;
+}
+
+.bottom-content{
+    text-align: center;
+    display: flex;
+}
+
+.bottom-shop{
+    border-radius: 15px;
+    width: 319rpx;
+    height: 304px;  
+    overflow: hidden;  
+    margin-left: 15rpx;
+}
+
+.bottom-shop__pic{
+    width: 318rpx;
+    height: 204rpx;
+}
+
+.bottom-shop__pic image{
+    width: 100%;
+    height: 100%;
+}
