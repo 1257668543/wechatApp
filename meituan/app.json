@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/homePage/homePage",
     "pages/orderPage/orderPage",
-    "pages/userPage/userPage",
-    "pages/homePage/homePage"
+    "pages/userPage/userPage"
   ],
   "window": {
     "backgroundTextStyle": "light",

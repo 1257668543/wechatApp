@@ -1,2 +1,59 @@
 <!--pages/orderpage/orderPage.wxml-->
-<text>pages/orderpage/orderPage.wxml</text>
+<view class="orderPage">
+    <view class="sort">
+        <view class="headBar"><text class="txt1" bindtap="all">全部订单</text></view>
+        <view class="headBar"><text class="txt" bindtap="unpaid">待付款</text></view>
+        <view class="headBar"><text class="txt" bindtap="unused">待使用</text></view>
+        <view class="headBar"><text class="txt" bindtap="uncommit">待评价</text></view>
+        <view class="headBar"><text class="txt" bindtap="refund">退款 / 售后</text></view>
+        <view class="bottomLine" style="left: {{bottomLineLeft}}rpx"></view>
+    </view>
+    <scroll-view class="order__info" scroll-y="true">
+        <block wx:if="{{showList.length}}">
+            <view class="show" wx:for="{{showList}}" wx:key="index" wx:for-item="order">
+                <view class="header">
+                    <view class="left">                       
+                        <image src="{{order.imgUrl}}"/>      
+                    </view>
+                    <view class="middle">
+                        <view class="business">
+                            {{order.business}}
+                        </view>
+                        <view class="date">
+                            {{order.date}}
+                        </view>
+                        <view class="totalPrice">
+                            {{order.totalPrice}}
+                        </view>
+                    </view>
+                    <view class="right">
+                        <view class="status">
+                            {{order.status}}
+                        </view>
+                    </view>
+                </view>
+                <view class="footer">
+                    <view class="again" wx:if="{{order.again}}">
+                        <view class="again__text">
+                            <text>再来一单</text>
+                        </view> 
+                    </view>
+                    <view class="commit" wx:if="{{order.commit}}">
+                        <view class="commit__text">
+                            <text>评价</text>
+                        </view>
+                    </view>  
+                    <view class="refundStatus" wx:if="{{order.refundStatus}}">
+                        <view class="refundStatus__text">
+                            <text>退款进度</text>
+                        </view>                       
+                    </view>               
+                </view>
+            </view>
+        </block>  
+        <view class="notice" wx:else>
+            <text>空空如也......</text>
+        </view>     
+    </scroll-view>
+      
+</view>
