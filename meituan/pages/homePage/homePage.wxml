@@ -25,7 +25,7 @@
             <view class="middle-more__text">{{item.title}}</view>
         </view>
         <view class="middle-banner">
-            <swiper class="middle-banner-swipper" indicator-active-color="#555555" indicator-dots="true" autoplay="true" interval="3000">
+            <swiper class="middle-banner-swipper" indicator-active-color="#555555" indicator-dots="true" autoplay="true" interval="3000" circular="true">
                 <swiper-item class="banner-img" wx:for="{{banners}}" wx:key="index">
                     <image src="{{item.img}}" />
                 </swiper-item>
@@ -36,11 +36,26 @@
     <view class="bottom">
         <view class="bottom-title"><text >附近拼团</text></view>
         <view class="bottom-content">
-        <view class="bottom-shop" wx:for="{{bottomShop}}" wx:key="index">
-            <view class="bottom-shop__pic"><image src="{{item.image}}"/></view>
-            <view class="bottom-shop__text">{{item.title}}</view> 
-            <view class="bottom-shop__price">￥{{item.price}}</view>     
+            <view class="bottom-shop" wx:for="{{bottomShop}}" wx:key="index">
+                <view class="bottom-shop__pic"><image src="{{item.image}}"/></view>
+                <view class="bottom-shop__text">{{item.title}}</view> 
+                <view class="bottom-shop__price" style="display:inline-block">￥{{item.price}}</view>
+                <view class="bottom-shop__prPrice" style="text-decoration:line-through; color:#999999; fontsize:3rpx; display: inline-block">￥{{item.prPrice}}</view>  
+                <view class="bottom-shop__type"><text >{{item.type}}</text></view>   
+            </view>
         </view>
+    </view>
+
+    <view class="bottom-food__shop">
+        <view class="food-shop_dec" wx:for="{{shopDec}}" wx:key="index">
+            <view class="food-shop_pic"><image src="{{item.img}}" /></view>
+            <view class="food-shop__etc">
+                <view class="food-shop__title"><text>{{item.title}}</text></view>
+                <view class="food-shop__pos"><text >{{item.position}}</text></view>
+                <view class="food-shop__pir"><text >￥{{item.price}}</text></view>
+                <view class="food-shop__sty"><text >{{item.sty}}.{{item.km}}km</text></view>
+                <view class="food-shop__num"><text >半年售{{item.num}}</text></view>
+            </view>
         </view>
     </view>
 </view>

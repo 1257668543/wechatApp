@@ -1,17 +1,16 @@
 .main{
-    padding: 19.9rpx;
-    height: 100vh;
+    padding: 22.2rpx;
     background-color: #f8f9f6;
 }
 
 .explor{
-    width: 92rpx;
-    height: 92rpx;
+    width: 102rpx;
+    height: 102rpx;
     text-align: center;
     font-size: 18rpx;
     position: absolute;
-    right: 80rpx;
-    top:405rpx;
+    right: 47rpx;
+    top:470rpx;
 }
 
 .explor-img{
@@ -26,7 +25,7 @@
 }
 
 .explor-text{
-    margin-top: 28rpx;
+    margin-top: 27rpx;
 }
 
 .top{
@@ -67,7 +66,7 @@
 
 .middle{
     background-color: #fff;
-    padding: 19.9rpx;
+    padding: 22.2rpx;
     width: 100%;
     border-radius: 15px;
     box-sizing: border-box;
@@ -81,20 +80,25 @@
 
 .middle-sorts__active{
     display: inline-block;
-    margin-left: 36rpx;
+    margin-right: 38.1rpx;
     text-align: center;
     font-size: 19.3rpx;  
 }
 
+.middle-sorts__active:nth-child(5n){
+    margin-right: 0;
+}
+
 .middle-sorts{
-    width: 648rpx;
+    margin-top: 13.8rpx;
+    width: 100%;
 }
 
 .active-img{
-    width: 93.3rpx;
-    height: 93.3rpx;
+    width: 102rpx;
+    height: 102rpx;
     border-radius: 10px;
-    line-height: 130rpx;
+    line-height: 145rpx;
 }
 
 .active-img image{
@@ -103,7 +107,9 @@
 }
 
 .active-text{
+    margin-top: 27.6rpx;
     line-height: 25rpx;
+    font-size: 18rpx;
 }
 
 .middle-banner{
@@ -125,12 +131,16 @@
 
 .middle-more{
     display: inline-block;
-    width: 92rpx;
-    height: 92rpx;
+    width: 102rpx;
+    height: 102rpx;
     text-align: center;
-    margin-left: 35.8rpx;
+    margin-right: 38.1rpx;
     font-size: 18rpx;
     margin-top: 38rpx;
+}
+
+.middle-more:nth-child(6n){
+    margin-right: 0;
 }
 
 .middle-more__sorts{
@@ -152,6 +162,7 @@
 
 .bottom{
     padding: 16.6rpx;
+    background-color: #fff;
 }
 
 .bottom-title{
@@ -164,19 +175,109 @@
 }
 
 .bottom-shop{
-    border-radius: 15px;
-    width: 319rpx;
-    height: 304px;  
+    border-radius: 10px;
+    width: 320rpx;
+    height: 100%;  
     overflow: hidden;  
-    margin-left: 15rpx;
+    margin-left: 17rpx;
+    position: relative;
 }
 
 .bottom-shop__pic{
-    width: 318rpx;
+    width: 320rpx;
     height: 204rpx;
 }
 
 .bottom-shop__pic image{
     width: 100%;
     height: 100%;
+}
+
+.bottom-shop__type{
+    position: absolute;
+    background-color: rgba(101, 101, 101, 0.7);  
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    line-height: 34.2rpx;
+    top: 9rpx;
+    left: 9rpx;
+    font-size: 10px;
+    letter-spacing: 5rpx;
+    color: #ffffff;
+}
+
+.bottom-food__shop{
+    margin-top: 21rpx;
+    padding-top: 21rpx;
+    background-color: #f4f4f4;
+}
+
+.food-shop_dec{
+    display: inline-block;
+    margin-top: 21rpx;
+    margin-left: 7rpx;
+    margin-right: 24rpx;
+    width: 330.6rpx;
+    position: relative;
+    border-radius: 10px;    
+}
+
+.food-shop_dec:nth-child(2n){
+    margin-right: 0;
+}
+
+.food-shop_pic{
+    border-radius: 5px;
+    height: 256.8rpx;
+    overflow: hidden; 
+}
+
+.food-shop_pic image{
+    width: 100%;
+    height: 100%;      
+}
+
+.food-shop_dec{
+    background-color: #ffffff;
+}
+
+.food-shop__sty{
+    position: absolute;
+    left: 9.4rpx;
+    top: 210rpx;
+    background-color: rgba(180, 175, 166, 0.7);  
+    text-align: center;
+    border-radius: 8px;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    line-height: 34.2rpx;
+}
+
+.food-shop__sty text{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.food-shop__pos{
+    color: #6b6b6b;
+    overflow:hidden;
+	/*不换行*/
+	white-space:nowrap;
+	/*添加...*/
+	text-overflow:ellipsis;
+}
+
+.food-shop__etc{
+    padding: 19.2rpx;
+}
+
+.food-shop__pir{
+    color: #ff6300;
+}
+
+.food-shop__num{
+    margin-top: 8rpx;
+    color: #6b6b6b;
 }
