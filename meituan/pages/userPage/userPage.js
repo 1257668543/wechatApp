@@ -5,7 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    myServ:[
+      {
+        url: "/icon/purchase.png",
+        desc: "订单"
+      },{
+        url: "/icon/collect.png",
+        desc: "收藏"
+      },
+      {
+        url: "/icon/coupon.png",
+        desc: "券包"
+      },{
+        url: "/icon/vip.png",
+        desc: "会员卡"
+      }
+    ],
+    otherServ: [
+      {
+        url: "/icon/business.png",
+        desc: "商家中心"
+      },{
+        url: "/icon/free.png",
+        desc: "免费领券"
+      },
+      {
+        url: "/icon/tax.png",
+        desc: "个税计算器"
+      },{
+        url: "/icon/opinion.png",
+        desc: "意见反馈"
+      },{
+        url: "/icon/rules.png",
+        desc: "规则中心"
+      },{
+        url: "/icon/gift.png",
+        desc: "邀请有礼"
+      }
+    ]
   },
 
   /**

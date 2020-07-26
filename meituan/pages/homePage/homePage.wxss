@@ -30,7 +30,7 @@
 
 .top{
     display: flex;
-    background-color: #f6c944;
+    background-color: #f6c543;
     padding: 10rpx;
 }
 

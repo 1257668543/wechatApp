@@ -1,1 +1,83 @@
-/* pages/userPage/userPage.wxss */
+.container{
+    background-color: #f8f8f8;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.header{
+    background-color: #F6C944;
+    width: 100%;
+    height: 222.46rpx;
+    display: flex;
+}
+.user__pic{
+    padding-left: 26.5rpx;
+    padding-top: 15rpx;
+    width: 137rpx;
+    height: 154.56rpx;
+}
+.user__pic image{
+    border-radius: 60%;
+    width: 110.4rpx;
+    height: 110.4rpx;
+}
+.user__info{
+    padding-top: 33.12rpx;
+}
+.user__name{
+    font-size: 32rpx;
+    font-weight: 600;
+}
+.accountManage{
+    text-align: center;
+    width: 103.22rpx;
+    height: 36.98rpx;
+    font-size: 18rpx;
+    margin-top: 10rpx;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    line-height: 36.98rpx;
+}
+.myServ{
+    position: absolute;
+    background-color: #ffffff;
+    width: 630rpx;
+    height: 193.75rpx;
+    left: 62.5rpx;
+    top: 155.11rpx;
+    border-radius: 30rpx;
+}
+.txt{
+    color: #222222;
+    padding-top: 29.26rpx;
+    font-size: 32rpx;
+    font-weight: 550;
+    padding-left: 22rpx;
+}
+.btnList{    
+}
+.btn{
+    display: inline-block;
+    padding-top: 20rpx;
+    text-align: center;
+    width: 157.5rpx;
+}
+.pic image{
+    width: 44.16rpx;
+    height: 44.16rpx;
+}
+.desc{
+    color: #333333;
+    font-size: 20rpx;
+}
+.otherServ{
+    position: absolute;
+    background-color: #ffffff;
+    width: 630rpx;
+    height: 308.6rpx;
+    left: 62.5rpx;
+    top: 367.1rpx;
+    border-radius: 30rpx;
+}

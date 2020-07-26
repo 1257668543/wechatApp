@@ -1,2 +1,46 @@
-<!--pages/userPage/userPage.wxml-->
-<text>pages/userPage/userPage.wxml</text>
+<scroll-view class="container" scroll-y="true">
+    <view class="header">
+        <view class="user__pic">
+            <image src="/icon/user__pic.jpg"/>
+        </view>
+        <view class="user__info">
+            <view class="user__name">
+                <text>Cendre767</text>
+            </view>
+            <view class="accountManage">
+                <text>账户管理 ></text>
+            </view>
+        </view>
+    </view>
+    <view class="myServ">
+        <view class="txt">
+            <text>我的服务</text>
+        </view>
+        <view class="btnList">
+            <view class="btn" wx:for="{{myServ}}" wx:key="index">
+                <view class="pic">
+                    <image src="{{item.url}}"/>
+                </view>
+                <view class="desc">
+                    <text>{{item.desc}}</text>
+                </view>
+            </view>
+        </view>            
+    </view>
+    <view class="otherServ">
+        <view class="txt">
+            <text>其他服务</text>
+        </view>
+        <view class="btnList">
+            <view class="btn" wx:for="{{otherServ}}" wx:key="index">
+                <view class="pic">
+                    <image src="{{item.url}}"/>
+                </view>
+                <view class="desc">
+                    <text>{{item.desc}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+  

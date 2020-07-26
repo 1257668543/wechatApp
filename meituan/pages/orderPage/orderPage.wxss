@@ -26,7 +26,7 @@
 }
 .bottomLine{
     position: absolute;
-    background-color: #f6c944;
+    background-color: #f6c543;
     width: 55rpx;
     height: 8rpx;
     bottom: 0rpx;
@@ -87,7 +87,7 @@
     font-size: 25rpx;
     width: 120rpx;
     height: 42.5rpx;
-    border: 2rpx solid #f6c944;
+    border: 2rpx solid #f6c543;
     border-radius: 10rpx;
 }
 .commit__text{
@@ -98,7 +98,7 @@
     font-size: 25rpx;
     width: 120rpx;
     height: 42.5rpx;
-    border: 2rpx solid #f6c944;
+    border: 2rpx solid #f6c543;
     border-radius: 10rpx;
 }
 .refundStatus__text{
@@ -110,7 +110,7 @@
     font-size: 25rpx;
     width: 120rpx;
     height: 42.5rpx;
-    border: 2rpx solid #f6c944;
+    border: 2rpx solid #f6c543;
     border-radius: 10rpx;
 }
 .notice{
