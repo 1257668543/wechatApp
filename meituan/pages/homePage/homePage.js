@@ -51,6 +51,85 @@ Page({
       title: '丽人/美发',
       color:'#f6c944'},
     ],
+    moreActivies1: [
+      {image: '/icon/supermarket.png',
+      title: '超市便利',
+      color:'#f6c944'},
+      {image: '/icon/visit.png',
+      title: '周边游/旅游',
+      color:'#f6c944'},
+      {image: '/icon/car.png',
+      title: '打车',
+      color:'#f6c944'},
+      {image: '/icon/run.png',
+      title: '跑腿代购',
+      color:'#f6c944'},
+      {image: '/icon/bike.png',
+      title: '骑车',
+      color:'#f6c944'},
+      {image: '/icon/train.png',
+      title: '火车票',
+      color:'#f6c944'},
+      {image: '/icon/vegetable.png',
+      title: '蔬菜水果',
+      color:'#f6c944'},
+      {image: '/icon/minsu.png',
+      title: '民宿/公寓',
+      color:'#f6c944'},
+      {image: '/icon/hair.png',
+      title: '丽人/美发',
+      color:'#f6c944'},
+    ],
+    moreActivies2: [
+      {image: '/icon/supermarket.png',
+      title: '超市便利',
+      color:'#f6c944'},
+      {image: '/icon/visit.png',
+      title: '周边游/旅游',
+      color:'#f6c944'},
+      {image: '/icon/car.png',
+      title: '打车',
+      color:'#f6c944'},
+      {image: '/icon/run.png',
+      title: '跑腿代购',
+      color:'#f6c944'},
+      {image: '/icon/bike.png',
+      title: '骑车',
+      color:'#f6c944'},
+      {image: '/icon/train.png',
+      title: '火车票',
+      color:'#f6c944'},
+      {image: '/icon/vegetable.png',
+      title: '蔬菜水果',
+      color:'#f6c944'},
+      {image: '/icon/minsu.png',
+      title: '民宿/公寓',
+      color:'#f6c944'},
+      {image: '/icon/hair.png',
+      title: '丽人/美发',
+      color:'#f6c944'},
+      {image: '/icon/quan.png',
+      title: '免费领券',
+      color:'#f6c944'},
+      {image: '/icon/parents.png',
+      title: '亲子/乐园',
+      color:'#f6c944'},
+      {image: '/icon/ktv.png',
+      title: 'KTV',
+      color:'#f6c944'},
+      {image: '/icon/sports.png',
+      title: '游泳/健身',
+      color:'#f6c944'},
+      {image: '/icon/marry.png',
+      title: '结婚/摄影',
+      color:'#f6c944'},
+      {image: '/icon/pass.png',
+      title: '畅行码',
+      color:'#f6c944'},
+      {image: '/icon/more.png',
+      title: '更多',
+      color:'#f6c944'},
+    ],
     banners: [
       {img:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1887077133,428528155&fm=26&gp=0.jpg'},
       {img:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1120749596,2531063265&fm=11&gp=0.jpg'},
@@ -154,9 +233,26 @@ Page({
       sty:'甜点饮品',
       km:4.5,
       num:500},
-    ]
+    ],
+
+    isHide:true
   },
 
+  explor(){
+    let moreActivies = this.data.moreActivies2
+    this.setData({
+      moreActivies: moreActivies,
+      isHide: false
+    })
+  },
+  
+  hide(){
+    let moreActivies = this.data.moreActivies1
+    this.setData({
+      moreActivies: moreActivies,
+      isHide: true
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
