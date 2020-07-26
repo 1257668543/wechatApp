@@ -7,10 +7,20 @@
     width: 102rpx;
     height: 102rpx;
     text-align: center;
-    font-size: 18rpx;
+    font-size: 22rpx;
     position: absolute;
     right: 47rpx;
     top:470rpx;
+}
+
+.hide{
+    width: 102rpx;
+    height: 102rpx;
+    text-align: center;
+    font-size: 22rpx;
+    position: absolute;
+    left: 180rpx;
+    top:750rpx;
 }
 
 .explor-img{
@@ -20,6 +30,11 @@
 }
 
 .explor image{
+    width: 100%;
+    height: 100%;
+}
+
+.hide image{
     width: 100%;
     height: 100%;
 }
@@ -109,7 +124,7 @@
 .active-text{
     margin-top: 27.6rpx;
     line-height: 25rpx;
-    font-size: 18rpx;
+    font-size: 22rpx;
 }
 
 .middle-banner{
@@ -139,7 +154,7 @@
     margin-top: 38rpx;
 }
 
-.middle-more:nth-child(6n){
+.middle-more:nth-child(5n+1){
     margin-right: 0;
 }
 
@@ -158,6 +173,7 @@
     text-align: center;
     white-space: pre;
     margin-top: 15rpx;
+    font-size: 22rpx;
 }
 
 .bottom{
