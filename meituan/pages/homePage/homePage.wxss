@@ -69,7 +69,7 @@
     border: 1rpx, solid,#000000;
     border-radius: 15px;
     text-align: center;
-    width: 585.8rpx;
+    width: 385.8rpx;
     height: 55.2rpx;
     margin-left: 20rpx;
 }

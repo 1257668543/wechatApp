@@ -1,8 +1,4 @@
-<view class="top">
-        <text>北京</text>
-        <view class="xiala"><image src="/icon/xiala.png" /></view>
-        <view class="input"> <input class="weui-input" auto-focus placeholder="输入商家名、品类或商圈"/> </view>     
-</view>
+<nav-bar></nav-bar>
 <view class="main">
     <view class="explor" bindtap="explor" wx:if="{{isHide}}">
         <view class="explor-img"><image src="/icon/explor.png" /></view>

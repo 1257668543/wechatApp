@@ -6,6 +6,17 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+    wx.db = {}
+
+    let info = wx.getSystemInfoSync();
+    wx.db.statusBarHeight = info.statusBarHeight
+
+    if(info.platform === 'android'){
+      wx.db.navbarHeight = 48
+    }else{
+      wx.db.navbarHeight = 44
+    }
+
     // 登录
     wx.login({
       success: res => {
