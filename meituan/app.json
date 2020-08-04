@@ -2,7 +2,8 @@
   "pages": [
     "pages/homePage/homePage",
     "pages/orderPage/orderPage",
-    "pages/userPage/userPage"
+    "pages/userPage/userPage",
+    "pages/collection/collection"
   ],
   "window": {
     "backgroundTextStyle": "light",

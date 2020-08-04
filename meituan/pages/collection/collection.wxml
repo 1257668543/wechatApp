@@ -1,0 +1,40 @@
+<view class="nav_head">
+    <view class="business">
+        <text bindtap="business">商家</text>
+    </view>
+    <view class="goods">
+        <text bindtap="goods">商品</text>
+    </view>
+    <view class="bottomLine" style="left: {{bottomLineLeft}}rpx"></view>
+</view>
+<view class="container">
+    <scroll-view class="showList" scroll-y="true">
+        <view class="collection_box" wx:if="{{showList.length}}">
+            <view class="collection_info" wx:for="{{showList}}" wx:key="index">
+                <view class="business_pic">
+                    <image class="" src="{{item.url}}"></image>
+                </view>
+                <view class="desc">
+                    <view class="brand">
+                        <text>{{item.business}}</text>
+                    </view>
+                    <view class="rank">
+                        <view class="stars">
+                            <icon class="" url=""></icon>
+                        </view>
+                        <view class="price" wx:if="{{item.price}}">
+                            <text>人均 ￥{{item.num}}</text>
+                        </view>
+                    </view>
+                    <view class="type">
+                        <text>{{item.type}}</text>
+                    </view>
+                </view>
+                <view class="dist">
+                    <text>{{item.distance}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="judge" wx:else>暂无收藏</view>
+    </scroll-view>
+</view>

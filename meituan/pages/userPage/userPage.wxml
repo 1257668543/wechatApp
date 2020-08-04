@@ -17,7 +17,7 @@
             <text>我的服务</text>
         </view>
         <view class="btnList">
-            <view class="btn" wx:for="{{myServ}}" wx:key="index">
+            <view class="btn" wx:for="{{myServ}}" wx:key="index" bindtap="myServ{{index}}">
                 <view class="pic">
                     <image src="{{item.url}}"/>
                 </view>
@@ -32,7 +32,7 @@
             <text>其他服务</text>
         </view>
         <view class="btnList">
-            <view class="btn" wx:for="{{otherServ}}" wx:key="index">
+            <view class="btn" wx:for="{{otherServ}}" wx:key="index" bindtap="otherServ{{index}}">
                 <view class="pic">
                     <image src="{{item.url}}"/>
                 </view>
