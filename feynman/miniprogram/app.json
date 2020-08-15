@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/discovery/discovery",
+    "pages/message/message",
+    "pages/userPage/userPage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#d8453c",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "iconPath": "images/tabBar_icon/homePage.png",
+        "selectedIconPath": "images/tabBar_icon/homePageSelected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "iconPath": "images/tabBar_icon/discovery.png",
+        "selectedIconPath": "images/tabBar_icon/discoverySelected.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "images/tabBar_icon/message.png",
+        "selectedIconPath": "images/tabBar_icon/messageSelected.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/userPage/userPage",
+        "iconPath": "images/tabBar_icon/user.png",
+        "selectedIconPath": "images/tabBar_icon/userSelected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
