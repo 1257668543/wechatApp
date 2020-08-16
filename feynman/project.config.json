@@ -28,7 +28,7 @@
 		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
-	"appid": "wx208ff745ee46b3fb",
+	"appid": "wx7e71cafdd40beca3",
 	"projectname": "feynman",
 	"libVersion": "2.8.1",
 	"simulatorType": "wechat",
@@ -49,13 +49,24 @@
 		"game": {
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/userPage/userPage",
+					"pathName": "pages/userPage/userPage",
+					"scene": null
 				}
 			]
 		}
