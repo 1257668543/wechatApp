@@ -8,13 +8,13 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "FeynmanStudy",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#FF5151",
+    "navigationBarTitleText": "Feynman Study",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#8a8a8a",
-    "selectedColor": "#d8453c",
+    "selectedColor": "#FF5151",
     "list": [
       {
         "pagePath": "pages/homePage/homePage",
