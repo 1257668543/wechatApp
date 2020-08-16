@@ -1,2 +1,35 @@
-<!--miniprogram/pages/userPage/userPage.wxml-->
-<text>miniprogram/pages/userPage/userPage.wxml</text>
+<view class="main">
+    <view class="top-content">
+        <view class="presonal-info">
+            <view class="portrait"></view>
+            <view class="name">费曼第一人</view>
+        </view> 
+        <view class="user-profile">
+            <view class="user-profile__content" wx:for="{{userProfile}}" wx:key="index">
+                <view class="pro-num">{{item.num}}</view>
+                <view class="pro-name">{{item.name}}</view>
+            </view>
+        </view>   
+        <view class="feynMan-money">
+            <view class="text">费曼币余额</view>
+            <view class="money">{{feymanMoney}}</view>
+        </view>
+    </view>
+    <view style="background: #f6f6f6; width: 100%; height: 20rpx;"></view>
+    <view class="middle-content">
+        <view class="user-content" wx:for="{{userFunctions}}" wx:key="index">
+            <van-cell-group>
+                <van-cell title="{{item.title}}" value="" is-link icon="{{item.icon}}"/>
+            </van-cell-group>
+        </view>
+    </view>
+    <view style="background: #f6f6f6; width: 100%; height: 20rpx;"></view>
+    <view class="buttom-content">
+        <view class="app-content" wx:for="{{aboutApp}}" wx:key="index">
+            <van-cell-group>
+                <van-cell title="{{item.title}}" value="" is-link icon="{{item.icon}}"/>
+            </van-cell-group>
+        </view>
+    </view>
+</view>
+

@@ -1,1 +1,22 @@
-/* miniprogram/pages/userPage/userPage.wxss */
+.top-content{
+    background-color: #fff;
+    padding: 40rpx;
+}
+
+.user-profile{
+    margin-top: 20rpx;
+    display: flex;
+    text-align: center;
+}
+
+.user-profile__content{
+    flex: 1;
+}
+
+.feynMan-money{
+    margin: 0 20rpx;
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
